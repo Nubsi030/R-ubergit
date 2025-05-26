@@ -1,0 +1,79 @@
+﻿customers.csv
+customer_id,unique identifier for customer
+first_name,first name of customer
+last_name,last name of customer
+email,email address of customer
+age,age of customer
+gender,gender of customer
+state,state where customer is located
+street_address,street address of customer
+postal_code,postal code of customer
+city,city where customer is located
+country,country where customer is located
+latitude,latitude coordinate of customer
+longitude,longitude coordinate of customer
+traffic_source,traffic source leading to customer
+created_at,timestamp when customer account was created
+
+events.csv
+event_id,unique identifier for event
+customer_id,identifier for customer associated with the event
+sequence_number,sequence number of event
+session_id,identifier for session during which the event occurred
+created_at,timestamp indicating when event took place
+ip_address,IP address from which event originated
+city,city where event occurred
+state,state where event occurred
+postal_code,postal code of event location
+browser,web browser used during event
+traffic_source, traffic source leading to event
+uri,uniform resource identifier associated with event
+event_type,type of event recorded
+
+inv_items.csv
+inventory_item_id,unique identifier for inventory item
+product_id,identifier for associated product
+created_at,timestamp when inventory item was created
+sold_at,timestamp when item was sold
+cost,cost of inventory item
+product_category,category of associated product
+product_name,name of associated product
+product_brand,brand of associated product
+product_retail_price,retail price of associated product
+product_department,department to which product belongs
+product_sku,stock keeping unit (SKU) of product
+product_distribution_center_id,identifier for distribution center associated with the product
+
+ord_items.csv
+order_item_id,unique identifier for order item
+order_id,identifier for associated order
+customer_id,identifier for customer who placed order
+product_id,identifier for associated product
+inventory_item_id,identifier for associated inventory item
+status,status of order item
+created_at,timestamp when order item was created
+shipped_at,timestamp when order item was shipped
+delivered_at,timestamp when order item was delivered
+returned_at,timestamp when order item was returned
+
+orders.csv
+order_id,unique identifier for order
+customer_id,identifier for customer who placed order
+status,status of order
+gender,gender information of customer
+created_at,timestamp when order was created
+returned_at,timestamp when order was returned
+shipped_at,timestamp when order was shipped
+delivered_at,timestamp when order was delivered
+num_of_item,number of items in order
+
+products.csv
+product_id,unique identifier for product
+cost,cost of product
+category,category to which product belongs
+name,name of product
+brand,brand of product
+retail_price,retail price of product
+department,department to which product belongs
+sku,stock keeping unit (SKU) of product
+distribution_center_id,identifier for distribution center associated with product
